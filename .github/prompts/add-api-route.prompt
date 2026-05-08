@@ -1,0 +1,9 @@
+# Add New API Route
+
+Create a new Next.js Route Handler for the `{{routeName}}` resource following this pattern:
+
+1. Create `src/app/api/{{routeName}}/route.ts` with GET and POST handlers
+2. Create `src/app/api/{{routeName}}/[id]/route.ts` with GET, PUT, DELETE handlers
+3. Add corresponding functions to `src/lib/api.ts`
+4. Use proper HTTP status codes and error handling
+5. Follow the TypeScript types in `src/lib/types.ts`
