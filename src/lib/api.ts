@@ -18,6 +18,7 @@ export async function getProductById(id: number): Promise<Product | undefined> {
 // TODO: implement this function
 export async function getProductsByCategory(category: string): Promise<Product[]> {
   // Copilot will suggest the implementation when you start typing
+  retu
   
 }
 
@@ -40,4 +41,11 @@ export async function updateProduct(id: number, updates: Partial<Product>): Prom
 // ❌ INCOMPLETE: Delete a product
 export async function deleteProduct(id: number): Promise<boolean> {
   
+}
+
+// ⚠️  BUG: This function has an intentional bug for the debugging demo
+export async function getDiscountedPrice(productId: number, discountPercent: number): Promise<number> {
+  const product = await getProductById(productId);
+  // BUG: should be (1 - discountPercent / 100) but divides by 10 instead
+  return product!.price * (1 - discountPercent / 10);
 }

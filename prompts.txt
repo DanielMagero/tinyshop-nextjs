@@ -1,0 +1,26 @@
+## Explore the codebase -- Ask
+
+- What files are in this project and how does the data flow
+from the API layer to the UI?
+
+- How does the ProductCard component get its data?
+
+## Code completion
+- Add validation to return null if the product is not found. --inline
+
+## Agent Mode -- Agent
+
+- Implement the cart page. Use
+localStorage to persist cart items. Display product name, price, and
+quantity for each item. Allow quantity adjustment and item
+removal. Show the order total. Add an Add to Cart button on the
+product detail page that saves to localStorage.
+
+## Debugging - Ask
+- If I call getDiscountedPrice(1,
+10) expecting a 10% discount on $89.99, I get $8.99 instead of
+$80.99. Why?
+
+- How do I fix it?
+- Fix the discount calculation --inline
+
